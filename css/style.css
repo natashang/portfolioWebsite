@@ -1,0 +1,785 @@
+/*---------------Major Elements used in page structures  -------------------*/
+
+body {
+	background-image: url('../images/bg.jpg');
+	background-color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Verdana;
+	color: white;
+}
+
+#container {
+	display: block;
+	position: relative;
+	padding: 4em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+}
+
+#splash {
+	position: relative;
+	padding: 4em;
+	display: block;
+	background-color: black;
+	margin-bottom: auto;
+	background: rgba(0,0,0,0.8);
+}
+
+main{
+	margin: 15px;
+}
+
+section{
+	width: auto;
+	padding: 6px 4px 6px 8px;
+	margin: auto;
+}
+
+header{
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	
+}
+
+footer{
+	height: 50px;
+	color: white;
+	font-weight: lighter;
+	padding:30px;
+	text-align: center;
+}
+
+/*----------- Minor Elements used in page structures ------------*/
+
+button {
+	background-color: #6699ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover{
+	background-color: #3377ff;
+}
+
+button:hover a{
+	color: white;
+}
+
+.sideleft{
+	padding: 10px 5px 10px 5px;
+	max-width: 30%;
+
+	margin: 0 0 0 0;
+	float: left;
+}
+
+.sideleft img {
+	width: 100%;
+}
+
+.sideleft h2{
+	padding-bottom: 10px;
+}
+
+.sideright{
+	padding: 2px;
+	width: 65%;
+	float: right;
+}
+
+#center {
+    padding: 10px;
+    text-align: center;
+}
+
+.clear{
+	clear: both;
+}
+
+/* ------------------- Navigation Elements --------------------*/
+
+nav {
+	max-width: 100%;
+}
+
+nav ul li a,nav ul li:hover ul, nav ul li ul li {
+	display:block;
+}
+
+nav ul{
+	list-style-type:none;
+	background:#fff;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+nav ul li{
+	width: auto;
+	display:inline-block;
+	position: relative;
+
+}
+
+nav ul li a{
+	display: block;
+	padding: 6px 60px;
+	font-weight: bold;
+	color:#4d004d;
+}
+
+nav ul li ul{
+	min-width: 100%;
+	opacity: 0.9;
+	display: none;
+	position: absolute;
+}
+
+nav ul li ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 28px;
+}
+
+:link {
+	color:#4d004d;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #9999ff;
+}
+
+/*
+nav ul li a:hover {
+	color: #9999ff;
+}*/
+
+:visited{
+	color:#4d004d;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+/*p a{
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+}
+*/
+
+nav ul li a:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color:#9999ff;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover:before{
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+/* Sub Menu*/
+nav ul li ul {
+	min-width: 100%;
+	opacity: 0.9;
+	display: none;
+	font-size: 12px;
+	position: absolute;
+}
+
+
+nav ul li ul li a{
+	text-align: center;
+	padding: 8px;
+}
+
+/*not sure*/ 
+nav ul li:hover ul{
+	display: block;
+}
+
+/*not sure*/ 
+nav ul li ul li {
+	display: block;
+}
+
+nav ul li a{
+	/*clear: decoration;*/
+	display: block;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+nav ul li a: hover before{
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+nav ul ul {
+	position: absolute;
+	padding: 0;
+	opacity: .9;
+	z-index: 999;
+}
+
+/*
+nav ul li ul {
+	position: absolute;
+	padding: 0;
+	opacity: .9;
+	z-index: 999;
+}*/
+
+/*
+nav{
+	/*background-color: green;*/
+	/*margin:10px;*/
+	/*padding:5px;*//*
+	height: 35px;
+	width: 100%;
+	font-size:150%;
+	font-weight: bold;
+
+
+}
+
+nav ul li a, nav ul li:hover ul, nav ul li ul li {
+	display: block;
+}
+
+nav ul{
+	list-style-type: none;
+	background: white;
+	padding: 0;
+	margin: 0;
+	opacity: 0.8;
+	/*padding: 0;*/
+
+	/*Not sure if need*/
+	/*background-color: #697e83;
+	margin: 10px;
+	border-radius: 10px;*//*
+}
+
+/*
+nav ul li{
+	width: auto;
+	display: inline-block;
+	position: relative;
+	/*Not sure*/
+/*
+	line-height: 10px;
+}
+
+/*not sure*/ /*
+nav ul li a{
+	display: block;
+	color: black;
+	padding: 14px 60px;
+	text-decoration: none;
+}
+
+/*?????*/ /*
+nav ul li:hover{
+	color:pink;
+}
+
+
+
+/*not sure*/ /*
+nav ul li a:hover{
+	color: black;
+	background-color:blue;
+	/*?*//*
+}
+
+/* Sub Menu*//*
+nav ul li ul {
+	min-width: 100%;
+	opacity: 0.9;
+	display: none;
+	position: absolute;
+}
+
+nav ul li ul li a{
+	text-align: center;
+	padding: 8px;
+}
+
+/*not sure*/ /*
+nav ul li:hover ul{
+	display: block;
+}
+
+/*not sure*/ /*
+nav ul li ul li {
+	display: block;
+}
+
+nav ul li a{
+	/*clear: decoration;*//*
+	display: block;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+/* 11: "configure :link, hover for navigation hyperlinks.
+Use #000 text color, (hyperlinks with :hover)"*/
+/*
+nav ul li a:link{
+	color: #000;
+}
+
+
+nav ul li a:hover {
+	color: #000;
+	cursor: pointer;
+
+}
+
+nav ul li a:before{
+	content:"";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom:0;
+	left:0;
+	background-color:#000;
+	visibility:hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a: hover before{
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+nav ul ul {
+	position: absolute;
+	padding: 0;
+	opacity: .9;
+	z-index: 999;
+}*/
+
+
+/*--------------------- Text Elements ------------------------*/
+
+h1{
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 0.5px;
+	font-size: 60px;
+	margin: 0;
+	padding: 10px 0 20px 10px;
+	color: white;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	font-size: 27px;
+	margin: 0;
+	text-transform: uppercase;
+	color: white;
+	padding-bottom: 10px;
+}
+
+h3{
+	font-size: 14px;
+	margin: 0px;
+	padding: 5px;
+	text-transform: uppercase;
+	text-align: left;
+	color: white;
+	letter-spacing: 0.5px;
+}
+
+p{
+	font-family: 'Raleway', sans-serif;	
+	color: white;
+	margin: 10px 0;
+	padding: 0;
+	font-size: 17px;
+}
+
+p a{
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+}
+
+ul{
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	color: white;
+	margin: 10px 0;
+}
+
+/*Pretty sure I need this??*/
+/*
+ul li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	visibility:visible;
+	transform: scaleX(1);
+}*/
+
+/* --------------------- Form Elements -------------------------*/
+
+table {
+	width: 100%;
+}
+
+form{
+	padding-top: 15px;
+}
+
+input[type=text], [type=email], textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+}
+
+input[type=submit] {
+    background-color: #6699ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3377ff;
+}
+
+.formContainer {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/*
+input [type=submit]{
+	width: 110px;
+	padding: 13px;
+	border: 0;
+	cursor: pointer;
+	background-color:#697e83;
+	border-radius: 2px;
+}
+
+input[type=text], [type=email], [type=comments]{
+	padding: 10px;
+	border-radius: 2px;
+}*/
+
+/* --------------------- Media Query Elements -------------------------*/
+
+@media only screen and (max-width: 1024px){
+
+	body {
+		width: auto;
+		margin: 0;
+		background-color: #99ccff;
+		background-image: none;
+		padding: 0;
+	}
+
+	#wrapper {
+		width: auto;
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+		box-shadow: none;
+	}
+	
+	main{
+		width: auto;
+		float: none;
+		position: relative;	
+		padding: 0;
+		/*border: 3px solid green;*/
+	}
+
+	header {
+		height: 100%;
+	}
+
+	h1{
+		font-size: 300%;
+		text-align: center;
+	}
+
+	/*Navigation menu*/
+	nav {
+		max-width: 100%;
+		position: relative;
+		text-align: center;
+		display: inline-block;
+		/*border: 3px solid brown;*/
+		margin: 0 0 200px 0;
+	}
+
+	nav ul {
+		width: auto;
+		/*text-align: center;*/
+		position: absolute;
+		margin: 0;
+		/*border: 1px solid red;*/
+	}
+
+	/* Each element of the nav menu*/
+	nav ul li {
+		width: 95%;
+		display: inline-block;
+		/*border: 3px solid purple;*/
+		margin: 0; 
+	}
+
+	#container, #splash {
+		max-width: 90%;
+	}
+
+	/*
+	nav ul li: hover {
+		display: block;
+	}*/
+	/*
+	nav li {
+		display: inline-block;
+		padding: 0.5em;
+	}*/
+
+	
+
+	nav a {
+		border-style: none;
+	}
+
+	h2 {
+		padding: 10px;
+		font-size: 120%;
+		text-align: center;
+	}
+
+	p {
+		font-size: 90%;
+	}
+
+	section {
+		width: 90%;
+		float: none;
+		border: none;
+
+	}
+
+	.sideleft {
+		width: auto;
+		border-right: none;
+		display: none;
+	}	
+
+	.sideright {
+		width: 100%;
+		float: none;
+		position: relative;
+	}
+
+	img {
+		display: none;
+	}
+
+	#gallery {
+		display: none;
+		padding: 0;
+	}
+
+	#fancyimg {
+		max-width: 90%;
+	}
+
+	/*
+	body {
+		margin: 0;
+		width: auto;
+	}
+	
+	main{
+		width: auto;
+		float: none;
+		position: relative;	
+		/*border: 3px solid green;*//*
+	}
+
+	header {
+		height: 100%;
+	}
+
+	#container, #splash{
+		max-width: 90%;
+		opacity: 1;
+	}
+
+	h1{
+		font-size: 300%;
+		text-align: center;
+
+	}
+
+	/*Navigation menu*//*
+	nav {
+		max-width: 100%;
+		float: none;
+		position: relative;
+		display: inline-block;
+		border: 5px solid brown;
+		margin: 0 0 200px 0;
+	}
+
+	nav ul {
+		width: auto;
+		text-align: center;
+		position: absolute;
+		border: 3px solid red;
+	}
+
+	/* Each element of the nav menu*//*
+	nav ul li {
+		width: 95%;
+		display: inline-block;
+		/*border: 1px solid purple;*/
+	}
+
+	/*
+	nav ul li: hover {
+		display: block;
+	}*/
+	/*
+	nav li {
+		display: inline-block;
+		padding: 0.5em;
+	}*/
+
+	/*
+
+	nav a {
+		border-style: none;
+	}
+
+	h2 {
+		padding: 10px;
+		font-size: 120%;
+		text-align: center;
+		color: white;
+	}
+
+	h3 {
+		padding: 10px;
+		font-size: 90%;
+		text-align: left;
+		color: white;
+	}
+
+	p {
+		font-size: 90%;
+		color: white;
+	}
+
+	section {
+		width: 100%;
+		float: none;
+		border: none;
+
+	}
+
+	.sideleft {
+		visibility: hidden;
+		/*
+		float: left;
+		width: 20%;
+		border-right: none;*//*
+	}	
+
+	.sideright {
+		padding: 0;
+		width: 70%;
+		float: none;
+		position: relative;
+	}
+
+	img {
+		display: none;
+	}
+
+
+	img {
+		width: 100%;
+	}*/
+}
+
+/*---------------------- Image (Fancybox gallery, Slider) Elements --------------------*/
+img {
+	width:100%;
+}
+
+#gallery{
+	height:400px;
+	width:600px;
+	margin:0 auto;
+}
+
+#gallery img{
+    height:400px;
+	width:600px;
+	position:absolute;
+}
+
+#play{		
+	padding: 2em;
+	height:auto;
+	width:auto;
+	/*background:white;*/	
+}	
+
+.fancyimg {
+	max-width:50px;
+	max-height:50px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 5px;
+	box-shadow: 0px 2px 3px #000;			
+}
