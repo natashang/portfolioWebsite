@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.js"> </script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+
+	<div id = "wrapper">
+		
+		<header>
+			<h1><a href="index.html" style="text-decoration: none">Natasha Ng</a></h1>
+		</header>
+
+		<nav>
+
+			<ul>		
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="portfolio.html">Portfolio</a>
+
+					<ul>
+						<li><a href="graphicdesign1.html">Graphic Design Year 1</a></li>
+						<li><a href="graphicdesign2.html">Graphic Design Year 2</a></li>
+						<li><a href="graphicdesign3.html">Graphic Design Year 3</a></li>
+						<li><a href="photography.html">Photography</a></li>
+						<li><a href="webdesign.html">Web Design</a></li>
+					</ul>
+
+				</li>
+				<li><a href="awards.html">Awards</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+
+			</ul>
+		</nav>
+
+		<div class="clear"></div>
+
+		<main>
+
+			<div id = "container">
+	
+				<div id = "splash">		
+
+					<h2>Thank You</h2>
+
+					<p> Thanks for your input! I'll get back to you shortly :-) </p>
+					<!--
+					<?php
+				
+					$con = mysqli_connect('localhost','root','');
+					mysqli_select_db($con,'mywebproject');
+					
+					$a = $_POST['name'];
+					$b = $_POST['email'];
+					$c = $_POST['comments'];
+					
+					$sql = "SELECT * FROM personal WHERE name ='$a'";
+					$result = mysqli_query($con,$sql);
+					$row = mysqli_fetch_array($result);					
+
+					if($row['email']==$b){
+						$msg="User Already Exist,Please Choose Another Email";
+						header("location:contact.php?msg=".$msg);
+					}
+					
+					else{
+						$qvar = "INSERT INTO contacts(name,email,comments) VALUES('$a','$b','$c')";
+						$q=mysqli_query($con,$qvar);
+						
+						if($q==false){
+							die("We have experienced an error. Please try again later.");
+						}
+					}
+					
+					echo "<h3 style='color:white'>Thank you $a for your feedback! I'll get back to you shortly :-)</h3>";
+				?>-->
+					
+				</div>
+			</div>
+		</main>
+
+	</div>
+
+	<div class="clear" > </div>
+
+	<footer>
+		<p>Copyright &copy; Natasha Ng 2017</p>	
+	</footer>
+
+	</div>
+
+</body>
+</html>
